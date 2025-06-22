@@ -1,0 +1,457 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #7a4bff, #9f56ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            transition: background-image 0.5s ease-in-out;
+            animation: fadeInBackground 3s ease-out;
+        }
+
+        @keyframes fadeInBackground {
+            0% {
+                background: linear-gradient(135deg, #7a4bff, #9f56ff);
+            }
+            50% {
+                background: linear-gradient(135deg, #9f56ff, #7a4bff);
+            }
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 80%;
+            max-width: 30%;
+            min-width: 300px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            animation: fadeInContainer 1s ease-in forwards;
+        }
+
+        @keyframes fadeInContainer {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffffff;
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        input,
+        button {
+            padding: 15px;
+            width: 85%;
+            font-size: 1.1em;
+            border-radius: 8px;
+            margin: 10px 0;
+            outline: none;
+            border: 1px solid #ddd;
+            transition: transform 0.2s;
+        }
+        button{
+            width: 50%;
+        }
+
+        input:focus {
+            border-color: #9f56ff;
+        }
+
+        button {
+            background: linear-gradient(135deg, #9f56ff, #7a4bff);
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s, transform 0.2s;
+            animation: pulseButton 1.5s infinite alternate;
+        }
+
+        @keyframes pulseButton {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #7a4bff, #9f56ff);
+            transform: scale(1.05);
+        }
+
+        #weather {
+            margin-top: 30px;
+            font-size: 1.2em;
+            opacity: 0;
+            animation: fadeInWeather 1s ease-in forwards;
+        }
+
+        @keyframes fadeInWeather {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .error {
+            color: #ff4040;
+            animation: shakeError 0.5s ease-in-out;
+        }
+
+        @keyframes shakeError {
+            0% {
+                transform: translateX(-10px);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            100% {
+                transform: translateX(-10px);
+            }
+        }
+
+        .weather-icon {
+            width: 120px;
+            margin-top: 20px;
+            animation: bounceIcon 2s ease-in-out infinite;
+        }
+
+        @keyframes bounceIcon {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        body.light {
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
+    color: black;
+}
+
+body.light .container {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+body.light input,
+body.light button {
+    border: 1px solid #aaa;
+    color: #333;
+}
+
+body.light input:focus {
+    border-color: #7a4bff;
+}
+
+body.light button {
+    background: linear-gradient(135deg, #d1c4e9, #b39ddb);
+    color:black;
+}
+
+body.light button:hover {
+    background: linear-gradient(135deg, #b39ddb, #d1c4e9);
+}
+
+body.light h1
+{
+    color:white;
+}
+
+body.light .container {
+    background: #111;
+}
+
+body.light h1,
+body.light h2,
+body.light p {
+    color: white;
+}
+#toggleModeWrapper {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+#toggleModeBtn {
+     padding: 10px 50px;
+    border-radius: 8px;
+    border: 2px solid black;
+    background: linear-gradient(135deg, #9f56ff, #7a4bff);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+#toggleModeBtn:hover {
+    background: linear-gradient(135deg, #7a4bff, #9f56ff);
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="toggleModeWrapper">
+         <button id="toggleModeBtn">Mode</button>
+    </div>
+
+    <div class="container">
+
+        <h1>Weather App</h1>
+        
+        <input type="text" id="city" placeholder="Enter city name" />
+        <button id="getWeatherBtn">Get Weather</button>
+        <div id="weather"></div>
+    </div>
+
+    
+<script src="./weather.js" type="text/javascript"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #7a4bff, #9f56ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      transition: background 0.5s ease-in-out, color 0.3s;
+      animation: fadeInBackground 3s ease-out;
+    }
+
+    @keyframes fadeInBackground {
+      0% { background: linear-gradient(135deg, #7a4bff, #9f56ff); }
+      50% { background: linear-gradient(135deg, #9f56ff, #7a4bff); }
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px 30px;
+      border-radius: 15px;
+      text-align: center;
+      width: 80%;
+      max-width: 30%;
+      min-width: 300px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      animation: fadeInContainer 1s ease-in forwards;
+    }
+
+    @keyframes fadeInContainer {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #ffffff;
+      animation: slideInFromTop 1s ease-out;
+    }
+
+    @keyframes slideInFromTop {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(0); }
+    }
+
+    input, button {
+      padding: 15px;
+      width: 85%;
+      font-size: 1.1em;
+      border-radius: 8px;
+      margin: 10px 0;
+      outline: none;
+      border: 1px solid #ddd;
+      transition: transform 0.2s;
+    }
+
+    button {
+      width: 50%;
+      background: linear-gradient(135deg, #9f56ff, #7a4bff);
+      color: white;
+      cursor: pointer;
+      border: none;
+      transition: background 0.3s, transform 0.2s;
+      animation: pulseButton 1.5s infinite alternate;
+    }
+
+    @keyframes pulseButton {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #7a4bff, #9f56ff);
+      transform: scale(1.05);
+    }
+
+    #weather {
+      margin-top: 30px;
+      font-size: 1.2em;
+      opacity: 0;
+      animation: fadeInWeather 1s ease-in forwards;
+    }
+
+    @keyframes fadeInWeather {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .error {
+      color: #ff4040;
+      animation: shakeError 0.5s ease-in-out;
+    }
+
+    @keyframes shakeError {
+      0%, 100% { transform: translateX(-10px); }
+      50% { transform: translateX(10px); }
+    }
+
+    .weather-icon {
+      width: 120px;
+      margin-top: 20px;
+      animation: bounceIcon 2s ease-in-out infinite;
+    }
+
+    @keyframes bounceIcon {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    /* Light Mode Styling */
+    body.light {
+      background: linear-gradient(135deg, #e0e0e0, #ffffff);
+      color: #000;
+    }
+
+    body.light .container {
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+    }
+
+    body.light input,
+    body.light button {
+      border: 1px solid #aaa;
+      color: #333;
+    }
+
+    body.light input:focus {
+      border-color: #7a4bff;
+    }
+
+    body.light button {
+      background: linear-gradient(135deg, #d1c4e9, #b39ddb);
+      color: black;
+      animation: none;
+    }
+
+    body.light button:hover {
+      background: linear-gradient(135deg, #b39ddb, #d1c4e9);
+    }
+
+    body.light h1,
+    body.light h2,
+    body.light p {
+      color: #000;
+    }
+
+    /* Toggle Button Placement & Style */
+    #toggleModeWrapper {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+    }
+
+    #toggleModeBtn {
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 2px solid black;
+      background: linear-gradient(135deg, #9f56ff, #7a4bff);
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-weight: bold;
+    }
+
+    #toggleModeBtn:hover {
+      background: linear-gradient(135deg, #7a4bff, #9f56ff);
+    }
+  </style>
+</head>
+<body>
+  <div id="toggleModeWrapper">
+    <button id="toggleModeBtn">Switch to Light Mode</button>
+  </div>
+
+  <div class="container">
+    <h1>Weather App</h1>
+    <input type="text" id="city" placeholder="Enter city name" />
+    <button id="getWeatherBtn">Get Weather</button>
+    <div id="weather"></div>
+  </div>
+
+  <script src="./weather.js" type="text/javascript"></script>
+</body>
+</html>
